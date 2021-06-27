@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Doggo Training School{% endblock %}
+{% block content %}
+<div>
+<div class="p-3 p-md-5 text-center index-bg">
+    <div class="col-md-3 p-lg-6 mx-auto my-5">
+      <h1 class="display-4 fw-normal index-h">Welcome to Doggo Training School</h1>
+      <p class="lead index-p">At Doggo Training School, we believe that every dog and every dog owner deserves to be happy.</p>
+      <a class="btn btn-primary btn-lg" href="{{ url_for('enroll') }}">Enroll Now!</a>
+    </div>
+</div>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="../static/img/Dog%201.png" class="d-block w-100" alt="Dog 1">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="../static/img/Dog%202.png" class="d-block w-100" alt="Dog 2">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="../static/img/Dog%203.png" class="d-block w-100" alt="Dog 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="index-description-div container-fluid ">
+    <div class="index-description">
+        <h5 class="display-4">Arf! arf! arf!</h5>
+        <p>The doggos are barking! It seems like someone entered the website!<br>
+        Heads up! Before moving on and get trapped by the cuteness of our<br>
+        doggos, take a look below to get to know us more!</p>
+        <p>This platform is the Doggo Training School's online website<br>
+        for the management of school's records of enrolled doggos'<br>
+        training progress and veterinary information. It also offers<br>
+        online registration for owners who want to enroll their cute furry<br>
+        babies over the internet.</p>
+    </div>
+    <div class="index-description">
+        <h5 class="display-4">What is Doggo Training School?</h5>
+        <p>Doggo Training School (DTS) is the premier training school for dogs<br>
+        that offers a specialized training curriculum to equip the enrolled<br>
+        dogs with right and useful skills that an emotional support and service<br>
+        dog should acquire and practice.</p>
+    </div>
+    <div class="index-description">
+        <h6 class="display-4">But wait, there's more!</h6>
+        <p>To better hone the dogs into effective emotional support and<br>
+        service furry babies, DTS is also equipped with the best trainers who<br>
+        have the great qualities and were excellently trained at<br>
+        several prestigious schools.</p>
+    </div>
+       <div class="index-description">
+        <p class="waiting-for">So what are you waiting for? Enroll your doggos now and be part of our school!</p>
+        <a href="{{ url_for('enroll') }}" class="btn btn-outline-primary btn-lg index-button">Enroll Your Dog Now!</a><br><br>
+           <img src="../static/img/logo.png" >
+    </div>
+
+</div>
+
+
+</div>
+
+{% endblock %}
